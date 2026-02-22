@@ -18,7 +18,7 @@ This implementation features in c/c++ a segmented Chebyshev polynomial interpola
 
 <img width="768" height="768" alt="fabius function" src="https://github.com/user-attachments/assets/5d5d950c-8cc7-468a-b66d-639fd7b15dd7" />
 
-The Fabius function is a part of the Zymplectic project (image from Zymplectic software)
+The Fabius function is a part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project) (image rendered in Zymplectic software)
 
 Specifications:
 - long double (16 byte storage)
