@@ -11,6 +11,8 @@ It is uniquely determined by:
 - $F'(x)=2F(2x)$ for $x\ge 0$
 - $F(x)+F(1-x)=1$ for $0\le x\le 1$
 
+The boundaries may be defined as $F(x)=1$ for $x\ge 1$ and $F(x)=0$ for $x\le 0$
+
 Despite being smooth everywhere, its Taylor series at any point does not converge to the function. 
 
 The Fabius function is typically calculated from recursion or other slow methods.
@@ -20,8 +22,9 @@ This implementation features in c/c++ a segmented Chebyshev polynomial interpola
 
 The Fabius function is a part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project) (image rendered in Zymplectic software)
 
-Specifications:
+Specifications **fabius.h**
 - long double (16 byte storage)
-- uses boundary convention $F(x)=1$ for $x\ge 1$ and $F(x)=0$ for $x\le 0$
-- contains also the first and second derivative / integral, specified in fabius.h
-- 128 segments, 10th order, global error <2e-23 (not accounting for truncations)
+- includes fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
+- 128 segments, 10th order
+- table obtained using 1024 control points per segment with global error <1.7e-23
+- global error <1.7e-23 expected for $x<0.07$. Relative function error, error/fab(x) is roughly LDBL_EPSILON (1.08e-19) for $0.1 < x < 0.5$
