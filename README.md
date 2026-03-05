@@ -27,4 +27,5 @@ Specifications **fabius.h**
 - includes fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
 - 128 segments, 10th order
 - table obtained using 1024 control points per segment with global error <1.7e-23
-- global error <1.7e-23 expected for $x<0.07$. Relative function error, error/fab(x) is roughly LDBL_EPSILON (1.08e-19) for $0.1 < x < 0.5$
+- global error <1.7e-23 dominates for $x<0.07$
+- truncation error error/fab(x) = LDBL_EPSILON (1.08e-19) dominates for $0.1 < x < 0.5$
