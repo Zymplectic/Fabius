@@ -24,7 +24,7 @@ This implementation features in c/c++ a segmented Chebyshev polynomial interpola
 The Fabius function is a part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project) (image rendered in Zymplectic software)
 
 # Contents
-- **fabius.h** and **fabiuslite.h** includes the fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
+- **fabius.h** and **fabiuslite.h** include the fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
 - 128 segments, 10th order
 - table obtained using 1024 control points per segment with global error <1.7e-23
 - :exclamation: truncation errors may be doubled by some flags enabled by -ffast-math
