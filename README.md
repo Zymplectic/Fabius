@@ -25,6 +25,7 @@ The Fabius function is a part of the [Zymplectic project](https://github.com/Zym
 
 # Contents
 - **fabius.h** and **fabiuslite.h** include the fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
+- **fabius.m** includes vectorized fabius(x,d) where d is the derivative order (negative for antiderivative) 
 - 128 segments, 10th order
 - table obtained using 1024 control points per segment with global error <1.7e-23
 - :exclamation: truncation errors may be doubled by some flags enabled by -ffast-math
@@ -40,6 +41,10 @@ The Fabius function is a part of the [Zymplectic project](https://github.com/Zym
 - global error <1.7e-23 dominates for $x<0.02$
 - truncation error, error/fab(x) = DBL_EPSILON (2.22e-16) dominates for $0.02 < x < 0.5$
 
+## fabius.m and fabius_test.m
+- MATLAB implementation identical to fabiuslite.h
+
 # Additional remarks / notes for further research
 - tables of 11th order and 256 segments generate global error <1.5e-27
+- canonical extension outside the boundaries $0 < x < 1$ exists but is not implemented 
 - the coefficients governed by the dyadic structure allows direct calculation of some coefficients. Perhaps one may directly calculate coefficients for arbitrary orders
