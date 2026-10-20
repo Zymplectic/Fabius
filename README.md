@@ -26,7 +26,6 @@ The Fabius function is a part of the [Zymplectic project](https://github.com/Zym
 # Contents
 - **fabius256_ld.h**, **fabius128_ld.h** and **fabius128_d.h** include the fabius function **fab(x)**, its first and second derivatives **fabd(x)**, **fabdd(x)** and integrals **fabi(x)**, **fabii(x)**
 - **fabius.m** includes vectorized fabius(x,d) where d is the derivative order (negative for antiderivative)
-- :exclamation: truncation errors may be doubled by some flags enabled by -ffast-math
 
 ## fabius256_ld.h (recommended)
 - long double (16 byte storage), extended precision
