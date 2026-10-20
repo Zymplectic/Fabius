@@ -1,6 +1,18 @@
 #ifndef FAB_H_INCLUDED
 #define FAB_H_INCLUDED
 
+/*
+	Interpolated Fabius function, 128 segments, global error < 1.7e-23 
+	fab(x) fabius function with convention fab(x) = 0, x < 0 and fab(x) = 1, x > 0
+	fabd(x) fabius first derivative
+	fabdd(x) fabius second derivative
+	fabi(x) fabius first integral
+	fabii(x) fabius second integral
+*/
+
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Zymplectic
+
 #if defined(__GNUC__) || defined(__clang__)
 #define FABALIGN __attribute__((aligned(64)))
 #else
