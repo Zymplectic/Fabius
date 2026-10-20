@@ -17,7 +17,7 @@ The boundaries may be defined as $F(x)=1$ for $x\ge 1$ and $F(x)=0$ for $x\le 0$
 Despite being smooth everywhere, its Taylor series at any point does not converge to the function. 
 
 The Fabius function is typically calculated from recursion or other slow methods.
-This implementation features in c/c++ a segmented Chebyshev polynomial interpolation implemented in extended precision.
+This implementation features in C/C++ a segmented Chebyshev polynomial interpolation using 128 or 256 segment tables.
 
 <img width="768" height="768" alt="fabius function" src="https://github.com/user-attachments/assets/5d5d950c-8cc7-468a-b66d-639fd7b15dd7" />
 
